@@ -15,8 +15,6 @@ Copy of the main checker that was developed for Python 2.7. This is to provide
 a reference point since the ANTLR 3.3 grammar is the what the 2.7 grammar was
 developed from.
 
-So see CheckerPython27 for details.
-
      
 TODOs
 -----

@@ -1,3 +1,6 @@
+// Under MIT License, Copyright (c) 2017-18 Dave Karetnyk
+// Full terms: see "LICENSE' file in root directory of repository:
+//      https://github.com/DaveKaretnyk/parsing-utils2
 import java.io.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;

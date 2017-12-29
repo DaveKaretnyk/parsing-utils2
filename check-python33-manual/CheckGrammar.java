@@ -192,12 +192,13 @@ public class CheckGrammar {
         lexer.addErrorListener(errorListener);
         parser.addErrorListener(errorListener);
 
+        int totalErrorsBefore = errorListener.getNumErrors();
         ParseTree tree = parser.file_input();
 
         ParseTreeWalker walker = new ParseTreeWalker();
         walker.walk(listener, tree);
 
-        return errorListener.getNumErrors();
+        return errorListener.getNumErrors() - totalErrorsBefore;
     }
 
 }

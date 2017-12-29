@@ -1,4 +1,4 @@
-// Generated from C:/github/UTILS_COPY/Parsers/Antlr/CheckerPython33/Grammar/Antlr\Python33.g4 by ANTLR 4.7
+// Generated from C:/github/Utils2/Parsing/parsing-utils2/check-python33-manual/Grammar/Antlr\Python33.g4 by ANTLR 4.7
 package Grammar.Gen;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;

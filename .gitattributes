@@ -11,6 +11,7 @@
 # ----------------------------------------------------------------------------
 # Java ######
 # These files are text and should be normalized (Convert crlf => lf)
+# Modified .sh entry and added .bat entry (Dave K).
 *.css           text
 *.df            text
 *.htm           text
@@ -22,7 +23,8 @@
 *.jspf          text
 *.jspx          text
 *.properties    text
-*.sh            text
+*.sh            text    eol=lf
+*.bat           text    eol=crlf
 *.tld           text
 *.txt           text
 *.tag           text
@@ -52,6 +54,7 @@
 *.py3 		text
 *.pyw 		text
 *.pyx  		text
+.ipynb      text
 
 # Binary files
 *.db		binary
@@ -68,41 +71,41 @@
 # ----------------------------------------------------------------------------
 # C++ ######
 # sources
-*.c text
-*.cc text
-*.cxx text
-*.cpp text
-*.c++ text
-*.hpp text
-*.h text
-*.h++ text
-*.hh text
+*.c         text
+*.cc        text
+*.cxx       text
+*.cpp       text
+*.c++       text
+*.hpp       text
+*.h         text
+*.h++       text
+*.hh        text
 
 # Compiled Object files
-*.slo binary
-*.lo binary
-*.o binary
-*.obj binary
+*.slo       binary
+*.lo        binary
+*.o         binary
+*.obj       binary
 
 # Precompiled Headers
-*.gch binary
-*.pch binary
+*.gch       binary
+*.pch       binary
 
 # Compiled Dynamic libraries
-*.so binary
-*.dylib binary
-*.dll binary
+*.so        binary
+*.dylib     binary
+*.dll       binary
 
 # Compiled Static libraries
-*.lai binary
-*.la binary
-*.a binary
-*.lib binary
+*.lai       binary
+*.la        binary
+*.a         binary
+*.lib       binary
 
 # Executables
-*.exe binary
-*.out binary
-*.app binary
+*.exe       binary
+*.out       binary
+*.app       binary
 
 # ----------------------------------------------------------------------------
 # Visual Studio #######
@@ -160,35 +163,35 @@
 # specific settings
 
 # Documents
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
-*.md text
-*.adoc text
-*.textile text
-*.mustache text
-*.csv text
-*.tab text
-*.tsv text
-*.sql text
+*.doc	    diff=astextplain
+*.DOC	    diff=astextplain
+*.docx      diff=astextplain
+*.DOCX      diff=astextplain
+*.dot       diff=astextplain
+*.DOT       diff=astextplain
+*.pdf       diff=astextplain
+*.PDF	    diff=astextplain
+*.rtf	    diff=astextplain
+*.RTF	    diff=astextplain
+*.md        text
+*.adoc      text
+*.textile   text
+*.mustache  text
+*.csv       text
+*.tab       text
+*.tsv       text
+*.sql       text
 
 # Graphics
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.gif binary
-*.tif binary
-*.tiff binary
-*.ico binary
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.tif       binary
+*.tiff      binary
+*.ico       binary
 # SVG treated as an asset (binary) by default. If you want to treat it as text,
 # comment-out the following line and uncomment the line after.
-*.svg binary
-#*.svg text
-*.eps binary
+*.svg       binary
+#*.svg      text
+*.eps       binary

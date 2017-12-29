@@ -193,6 +193,9 @@ develop-eggs
 *.pyd
 .installed.cfg
 
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
 # Installer logs
 pip-log.txt
 
@@ -301,21 +304,6 @@ crashlytics-build.properties
 hs_err_pid*
 
 # Exceptions that we want included!
-!Parsers/Antlr/CheckerPython27/samples/bad_files/__init__.pyc
-!Parsers/Antlr/CheckerPython27/samples/bad_files/__init__.pyx
-!Parsers/Antlr/CheckerPython27/samples/bad_files/tasks.pyd
-
-!Parsers/Antlr/parser-python27/samples/bad_files/__init__.pyc
-!Parsers/Antlr/parser-python27/samples/bad_files/__init__.pyx
-!Parsers/Antlr/parser-python27/samples/bad_files/tasks.pyd
-
-# Log file exceptions that we want included!
-!Parsers/Antlr/LogAnalyzer/samples/errors/jenkins/*.log
-!Parsers/Antlr/LogAnalyzer/samples/errors/local/*.log
-!Parsers/Antlr/LogAnalyzer/samples/ok/jenkins/*.log
-!Parsers/Antlr/LogAnalyzer/samples/ok/local/*.log
-
-# dll_depend utility: running example generates output here.
-dependencies/
-errors.txt
-results.txt
+!check-python33-manual/samples/bad_files/blah.pyc
+!check-python33-manual/samples/bad_files/blah.pyx
+!check-python33-manual/samples/bad_files/extension.pyd

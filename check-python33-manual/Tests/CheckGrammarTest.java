@@ -106,6 +106,21 @@ class CheckGrammarTest {
     }
 
     @Test
+    void utf_8_bom_files_Test() throws Exception {
+        String directory = "samples/utf_8_bom";
+        List<String> fileList = FileListing.buildList(directory, false);
+
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
+        int errors = checkGrammar.execute();
+        List<AntlrSyntaxError> errorList = checkGrammar.getAntlrSyntaxErrorList();
+
+        if (printDiagnostics) {
+            System.out.format("\t%d errors\t\tdirectory:\t%s\n", errors, directory);
+        }
+        assertEquals(0, errors);
+    }
+
+    @Test
     void standard_library_Test() throws Exception {
         // Process a copy of the 3.3.7 standard library sources.
         // Don't process files in 'test' or 'tests' directories or files with 'lib2to3' in their
@@ -130,21 +145,6 @@ class CheckGrammarTest {
         if (printDiagnostics)
             System.out.format("\t%d errors\t\tdirectory:\t%s\n", errors, directory);
         assertEquals(2, errors);
-    }
-
-    @Test
-    void utf_8_bom_files_Test() throws Exception {
-        String directory = "samples/utf_8_bom";
-        List<String> fileList = FileListing.buildList(directory, false);
-
-        CheckGrammar checkGrammar = new CheckGrammar(fileList);
-        int errors = checkGrammar.execute();
-        List<AntlrSyntaxError> errorList = checkGrammar.getAntlrSyntaxErrorList();
-
-        if (printDiagnostics) {
-            System.out.format("\t%d errors\t\tdirectory:\t%s\n", errors, directory);
-        }
-        assertEquals(0, errors);
     }
 
     // -------------------------------------------------------------------------------------------

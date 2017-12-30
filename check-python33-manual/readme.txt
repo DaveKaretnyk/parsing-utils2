@@ -40,7 +40,7 @@ Manual setup:
    a. Set the 'Output directory to where all output is generated' to the root
       directory of this project. E.g.
         C:\github\Utils2\Parsing\parsing-utils2\check-python33-manual
-   b. Set the 'package/namespace for the generated code' to 'Gen.Grammar'.
+   b. Set the 'package/namespace for the generated code' to 'Grammar.Gen'.
    c. Finished with dialog: click OK.
 5. Right click on the .g4 file in the IntelliJ editor again and select
    'Generate ANTLR Recognizer'. This will re-generate the Java source for the
@@ -77,4 +77,5 @@ TODOs (maybe)
   its purpose for now. :-)
 * Related to previous comment - processing could be made more efficient (some
   obvious things to try).
-
+* See TODOs in readme.txt check-python27-manual project, some might apply here
+  also.

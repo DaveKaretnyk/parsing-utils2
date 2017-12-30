@@ -1,0 +1,246 @@
+As @ 30/12/2017
+---------------
+
+872 processed module/s
+48 errors found
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\register.py
+	line, char position    61,13
+	message:               extraneous input '"' expecting {'`', 'lambda', 'not', 'None', 'True', 'False', NAME, STRING_LITERAL, BYTES_LITERAL, DECIMAL_INTEGER, OCT_INTEGER, HEX_INTEGER, BIN_INTEGER, FLOAT_NUMBER, IMAG_NUMBER, '*', '(', ')', '**', '[', '+', '-', '~', '{'}
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt, testlist, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, trailer]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\register.py
+	line, char position    62,18
+	message:               mismatched input 'the' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt, testlist, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, trailer]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\register.py
+	line, char position    62,22
+	message:               no viable alternative at input 'check'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\register.py
+	line, char position    62,28
+	message:               no viable alternative at input 'command'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\register.py
+	line, char position    62,36
+	message:               no viable alternative at input 'instead'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\register.py
+	line, char position    62,43
+	message:               no viable alternative at input '"'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\register.py
+	line, char position    62,71
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\sdist.py
+	line, char position    172,13
+	message:               extraneous input '"' expecting {'`', 'lambda', 'not', 'None', 'True', 'False', NAME, STRING_LITERAL, BYTES_LITERAL, DECIMAL_INTEGER, OCT_INTEGER, HEX_INTEGER, BIN_INTEGER, FLOAT_NUMBER, IMAG_NUMBER, '*', '(', ')', '**', '[', '+', '-', '~', '{'}
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt, testlist, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, trailer]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\sdist.py
+	line, char position    173,18
+	message:               mismatched input 'the' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt, testlist, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, trailer]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\sdist.py
+	line, char position    173,22
+	message:               no viable alternative at input 'check'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\sdist.py
+	line, char position    173,28
+	message:               no viable alternative at input 'command'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\sdist.py
+	line, char position    173,36
+	message:               no viable alternative at input 'instead'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\sdist.py
+	line, char position    173,43
+	message:               no viable alternative at input '"'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\distutils\command\sdist.py
+	line, char position    173,71
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\ensurepip\__init__.py
+	line, char position    128,61
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\ensurepip\__init__.py
+	line, char position    128,72
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    197,36
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    197,47
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    211,32
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    211,43
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    240,35
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    240,46
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    257,35
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    257,46
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    368,39
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, for_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    368,50
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, for_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    654,43
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, for_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    654,54
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, for_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    772,50
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\configHandler.py
+	line, char position    772,53
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    23,62
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    23,77
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    586,42
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    586,50
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    592,40
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    592,55
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    593,40
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    593,48
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    659,22
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    659,44
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    811,26
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    811,48
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    817,51
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    817,73
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, classdef, suite, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    1489,54
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    1489,65
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, try_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    1512,54
+	message:               mismatched input '=' expecting ')'
+	rule stack:            [file_input, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, for_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, print_stmt, test, or_test, and_test, not_test, comparison, expr, xor_expr, and_expr, shift_expr, arith_expr, term, factor, power, atom]
+
+	filename:              samples\standard_library_27_13\Lib\idlelib\PyShell.py
+	line, char position    1512,65
+	message:               no viable alternative at input ')'
+	rule stack:            [file_input, stmt, compound_stmt, funcdef, suite, stmt, compound_stmt, for_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, compound_stmt, if_stmt, suite, stmt, simple_stmt, small_stmt, expr_stmt]
+

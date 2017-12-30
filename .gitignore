@@ -307,3 +307,9 @@ hs_err_pid*
 !check-python33-manual/samples/bad_files/blah.pyc
 !check-python33-manual/samples/bad_files/blah.pyx
 !check-python33-manual/samples/bad_files/extension.pyd
+
+# Exceptions that we want included!
+!check-python27-manual/samples/bad_files/blah.pyc
+!check-python27-manual/samples/bad_files/blah.pyx
+!check-python27-manual/samples/bad_files/extension.pyd
+!check-python27-manual/samples/standard_library_27_13/current_errors.log

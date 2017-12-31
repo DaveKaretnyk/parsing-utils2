@@ -46,11 +46,17 @@ Manual setup:
 6. Build the Java source (Build->Build Project).
 7. Any of the tests in CheckGrammarTest or AntlrSyntaxErrorTest can now be
    run.
-8. To run the main CheckGrammar class, e.g.
+8. To run the ANTLR test rig (see ANTLR documentation), e.g.
    a. Under 'Edit Configurations...' add an 'Application' configuration with
       settings:
-        main class:         CheckGrammar
-        program arguments:  samples/miscellaneous errors.log
+        main class:     org.antlr.v4.gui.TestRig
+        program args:   Grammar.Gen.Python27 file_input -gui samples/temp.py
+      Of course TestRig supports other possibilities (see docs).
+9. To run the main CheckGrammar class, e.g.
+   a. Under 'Edit Configurations...' add an 'Application' configuration with
+      settings:
+        main class:     CheckGrammar
+        program args:   samples/miscellaneous errors.log
       The first argument can be either a specific .py file or a directory
       containing .py files. The second argument is where the errors will be
       logged.

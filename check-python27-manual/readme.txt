@@ -9,7 +9,7 @@ Main features:
 	  2.7.13 standard library sources.
 	+ Handle UTF-8 BOM marker in files - that tripped me up for a while.
 
-The grammar was derived by taking the Python 3.3 grammar from Bart Kiers:
+The grammar was developed by taking the Python 3.3 grammar from Bart Kiers:
 	https://github.com/bkiers/python3-parser
 Then diffing the official 2.7 grammar specification against the 3.3
 specification to figure out what changes were needed.

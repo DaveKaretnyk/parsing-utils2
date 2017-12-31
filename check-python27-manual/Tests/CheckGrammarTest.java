@@ -173,7 +173,7 @@ class CheckGrammarTest {
         // path -> they often contain code that is not grammatically correct. This is more
         // practical than manually going through all files and selectively disabling as this would
         // need done each time the lib gets updated.
-        String directory = "samples/standard_library_27_13/";
+        String directory = "../samples/standard_library_27_13/";
         List<String> fileList = FileListing.buildList(directory, true);
 
         CheckGrammar checkGrammar = new CheckGrammar(fileList, true);

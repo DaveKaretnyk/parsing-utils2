@@ -4,8 +4,8 @@
 This repository contains code (e.g test programs) that I developed while experimenting with the
 ATNLR parser from Terence Parr.
 
-    <http://www.antlr.org/>
-    <https://github.com/antlr>
+http://www.antlr.org/
+https://github.com/antlr
     
 Maybe there is something in here that is useful to others... Feel free to have a look and let me
 know what you think. As you will see there are plenty of things that could be improved! lol
@@ -39,7 +39,7 @@ project of some description).
 Program that scans Python modules (files) or packages (directories) for 3.3 syntax and flags any
 detected errors. This uses the Python 3.3 grammar from Bart Kiers:
 
-    <https://github.com/bkiers/python3-parser>
+https://github.com/bkiers/python3-parser
 
 In that respect then nothing new, just my own experimenting to get started with ANTLR, and Java...
  and IntelliJ IDEA... More information in the readme.txt in the directory.

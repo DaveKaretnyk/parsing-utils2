@@ -32,7 +32,7 @@ I did figuring out ANTLR concepts.
 The pdf in the 'docs' directory is a little poster that I prepared for colleagues a while back to
 try and explain why I thought this parsing stuff is worth taking a fresh look at.
 
-###Index to Content
+### Index to Content
 A short description here of the purpose of each directory (typically a directory contains a
 project of some description).
 

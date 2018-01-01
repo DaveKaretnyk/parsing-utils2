@@ -40,7 +40,7 @@ project of some description).
 Program that scans Python modules (files) or packages (directories) for 2.7 syntax and flags any
 detected errors.
 
-This a more sensible project organization using a Maven pom.xml file than its manually set up
+This is a more sensible project organization using a Maven pom.xml file than its manually set up
 counterpart 'check-python27-manual', But functionally it is no different. More information in the
  readme.txt in the directory.
 

@@ -24,9 +24,9 @@ A few aspects worthy of note
 * The ANTLR Maven support is copied from:
     https://github.com/bkiers/python3-parser
 * Number or additions made to pom.xml to support JUnit 5 from both Maven and
-  IntelliJ IDED. Probably a bit more than strictly required, the content was
-  copied (then minor a few modifications) from:
-    https://github.com/junit-team/junit5-samples/blob/master/junit5-maven-consumer/pom.xml
+  IntelliJ IDED. Probably a bit more than strictly required, the pom.xml
+  content was copied (then minor a few modifications) from:
+    https://github.com/junit-team/junit5-samples/tree/master/junit5-maven-consumer
 * The ANTLR plugin can probably still be used... But no real benefit and less
   confusing to just stick the the ANTLR Maven plugin that this project uses.
 * Similarly, the project can be built from the IntelliJ 'Build' menu but that

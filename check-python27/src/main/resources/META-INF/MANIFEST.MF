@@ -1,0 +1,2 @@
+Manifest-Version: 0.2.0
+Main-Class: me.dave_karetnyk.utils.grammar.python27.CheckGrammar

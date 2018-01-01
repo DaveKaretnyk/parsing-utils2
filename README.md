@@ -36,6 +36,14 @@ try and explain why I thought this parsing stuff is worth taking a fresh look at
 A short description here of the purpose of each directory (typically a directory contains a
 project of some description).
 
+#### check-python-27
+Program that scans Python modules (files) or packages (directories) for 2.7 syntax and flags any
+detected errors.
+
+This a more sensible project organization using a Maven pom.xml file than its manually set up
+counterpart 'check-python27-manual', But functionally it is no different. More information in the
+ readme.txt in the directory.
+
 #### check-python-33-manual
 Program that scans Python modules (files) or packages (directories) for 3.3 syntax and flags any
 detected errors. This uses the Python 3.3 grammar from Bart Kiers:
@@ -43,7 +51,8 @@ detected errors. This uses the Python 3.3 grammar from Bart Kiers:
 https://github.com/bkiers/python3-parser
 
 In that respect then nothing new, just my own experimenting to get started with ANTLR, and Java...
- and IntelliJ IDEA... More information in the readme.txt in the directory.
+and IntelliJ IDEA... Setup as a 'manual' IntelliJ project, so no use of Maven or Gradle. More
+information in the readme.txt in the directory.
 
 #### check-python-27-manual
 Program that scans Python modules (files) or packages (directories) for 2.7 syntax and flags any
@@ -51,4 +60,7 @@ detected errors.
 
 The grammar was developed by taking the 3.3 grammar from Kiers as starting point. Then diffing the
 official Python 2.7 grammar specification against the 3.3 specification to figure out what changes
-were needed. More information in the readme.txt in the directory.
+were needed. Setup as a 'manual' IntelliJ project, so no use of Maven or Gradle.  More information
+in the readme.txt in the directory. See functionally equivalent project 'check-python27' for a
+better project organization.
+ 

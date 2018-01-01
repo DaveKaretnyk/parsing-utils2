@@ -16,50 +16,30 @@ specification to figure out what changes were needed.
 
 Setup
 -----
-Manual setup within IntelliJ IDEA using the ANTLR plugin to configure how
-grammar files are generated. Not the best organization, but useful as a
-starting point to understand what is going on.
+Project setup is done via Maven pom.xml (compared to tha 'manual' IntelliJ
+setup of project 'check-python27-manual'. This is a more sensible way to
+organize things! :-)
 
-See also directory 'check-python33-manual' - same project organization but
-uses Python 3.3 grammar from Bart Kiers.
-
-Manual setup:
-1. Assuming the ANTLR IntelliJ IDEA plugin in installed.
-2. Create an IntelliJ project (type just 'plain Java') for the sources of this
-   directory.
-3. The project requires the following dependencies. So these need setup under
-   Project Settings->Modules->Dependencies:
-        Java 1.8; JUnit 5.0; Apache Common IO 2.54; ANTLR 4.7.
-   So these need to be available from somewhere on your system.
-   a. And under Project Settings->Modules-Source select the project root as a
-      source directory and the 'Test' directory as a test directory.
-4. Bring up the 'Configure ANTLR...' dialog (right click on the .g4 file in
-   the IntelliJ editor.
-   a. Set the 'Output directory to where all output is generated' to the root
-      directory of this project. E.g.
-        C:\github\Utils2\Parsing\parsing-utils2\check-python33-manual
-   b. Set the 'package/namespace for the generated code' to 'Grammar.Gen'.
-   c. Finished with dialog: click OK.
-5. Right click on the .g4 file in the IntelliJ editor again and select
-   'Generate ANTLR Recognizer'. This will re-generate the Java source for the
-   grammar into the 'Grammar/Gen' directory again.
-6. Build the Java source (Build->Build Project).
-7. Any of the tests in CheckGrammarTest or AntlrSyntaxErrorTest can now be
-   run.
-8. To run the ANTLR test rig (see ANTLR documentation), e.g.
-   a. Under 'Edit Configurations...' add an 'Application' configuration with
-      settings:
-        main class:     org.antlr.v4.gui.TestRig
-        program args:   Grammar.Gen.Python27 file_input -gui samples/temp.py
-      Of course TestRig supports other possibilities (see docs).
-9. To run the main CheckGrammar class, e.g.
-   a. Under 'Edit Configurations...' add an 'Application' configuration with
-      settings:
-        main class:     CheckGrammar
-        program args:   samples/miscellaneous errors.log
-      The first argument can be either a specific .py file or a directory
-      containing .py files. The second argument is where the errors will be
-      logged.
+A few aspects worthy of note
+* The ANTLR Maven support is copied from:
+    https://github.com/bkiers/python3-parser
+* Number or additions made to pom.xml to support JUnit 5 from both Maven and
+  IntelliJ IDED. Probably a bit more than strictly required, the content was
+  copied (then minor a few modifications) from:
+    https://github.com/junit-team/junit5-samples/blob/master/junit5-maven-consumer/pom.xml
+* The ANTLR plugin can probably still be used... But no real benefit and less
+  confusing to just stick the the ANTLR Maven plugin that this project uses.
+* Similarly, the project can be built from the IntelliJ 'Build' menu but that
+  of course relies on the grammar being first translated to Java source. So
+  again less confusing to just stick to Maven.
+* Careful when running the ANTLR test rig. For example to display the parse
+  tree graphically the following arguments are required (all one line):
+        me.dave_karetnyk.utils.grammar.python27.Python27
+        file_input -gui samples/source_with_errors/multiple_errors.py
+  Note that the specification of the grammar file! It is case sensitive, so
+  'python27' for the path and 'Python27' for the grammar file.
+* The project dependencies: Java 1.8; JUnit 5; Apache Common IO 2.54; and of
+  course ANTLR 4.7 are setup via the pom.xml.
 
 
 TODOs (maybe)
@@ -68,16 +48,14 @@ TODOs (maybe)
   look they are mostly related to the print stmt? And also the warn stmt?
 * Should really have the Python 2.7 and Python 3.3 grammars set up as modules
   of some kind that are used by the 'main checker code'!
-* Java details on how to organize some of this not entirely clear to me.
-    * E.g. better to use to Maven or Gradle organization.
+* Some Maven details not entirely clear to me yet.
 * Java code in general needs a bit of a tidy up, but functional and serves
   its purpose for now. :-)
 * Related to previous comment - processing could be made more efficient (some
   obvious things to try).
 * Check how Unicode should be handled for 2.7.X.
 * Handle Encoding declarations properly?
-* Check embedded Python code in more detail.
-* Understand details of Python27.g4 grammar.
+* Check embedded Python code in the grammar in more detail.
 * efficiency?
     * explicitly use SLL(*) grammar then LL(*) only if require?
     * don't keep recreating the grammar classes, e.g. not a new parser for
@@ -96,6 +74,7 @@ Done
 * Efficiency?
     * Use setBuildParseTree(false)? Quick test - makes almost no difference.
 * Archive copy of 2.7 standard library, e.g. for future testing.
+* Understand details of Python27.g4 grammar.
 * Define sensible output format? Just simple log file and stdout for now?
 * State / threading error: run all unit tests, sometimes test fails? Silly
   goof in my class FileListing.java! ;-)
@@ -112,3 +91,5 @@ Done
 * GrammarErrorListener - adjust so that lexer errors are handled too.
 * how to deploy? Just pack into JAR (see notes elsewhere).
 * plugin in for IntelliJ/PyCharm? Not really need, might set up Jenkins job.
+* Java details on how to organize some of this not entirely clear to me.
+    * E.g. better to use to Maven or Gradle organization.

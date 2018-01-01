@@ -31,7 +31,7 @@ Manual setup:
    directory.
 3. The project requires the following dependencies. So these need setup under
    Project Settings->Modules->Dependencies:
-        Java 1.8; JUnit 5.0; Apache Common IO 2.54; ANTLR 4.7.
+        Java 1.8; JUnit 5.0; Apache Common IO 2.54; ANTLR 4.7.1.
    So these need to be available from somewhere on your system.
    a. And under Project Settings->Modules-Source select the project root as a
       source directory and the 'Test' directory as a test directory.

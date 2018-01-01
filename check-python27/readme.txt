@@ -39,7 +39,7 @@ A few aspects worthy of note
   Note that the specification of the grammar file! It is case sensitive, so
   'python27' for the path and 'Python27' for the grammar file.
 * The project dependencies: Java 1.8; JUnit 5; Apache Common IO 2.54; and of
-  course ANTLR 4.7 are setup via the pom.xml.
+  course ANTLR 4.7.1 are setup via the pom.xml.
 
 
 TODOs (maybe)

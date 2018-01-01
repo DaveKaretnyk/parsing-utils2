@@ -87,6 +87,7 @@
         </dependency>
 
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -130,6 +131,34 @@
                     </arguments>
                     <mainClass>me.dave_karetnyk.utils.grammar.python27.CheckGrammar</mainClass>
                 </configuration>
+            </plugin>
+
+            <!-- After a bout of trying various suggestions this is the one that seems to working
+                 as  required:
+                 https://stackoverflow.com/questions/574594/how-can-i-create-an-executable-jar-with-dependencies-using-maven
+             -->
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>me.dave_karetnyk.utils.grammar.python27.CheckGrammar</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <!-- special label says '...make JAR with all dependencies included...' -->
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>

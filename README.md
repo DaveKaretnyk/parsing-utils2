@@ -24,10 +24,10 @@ find life has gotten easier.
 I understand one of the goals of ANTLR is to make the use of lexing and parsing techniques more
 accessible to 'normal developers'? That is, people who are primarily working in different areas
 but might make sensible use of parsing techniques as part of an overall problem solution? If so
-then hats off - mission accomplished. The ANTLR book (The Definitive ANTLR 4 Reference) does an
-excellent job of explaining the what, why, and how right from the very basics. And to be honest I
-spent probably more time figuring out the details of Java and IntelliJ IDEA (both new to me) than I
-I did figuring out ANTLR concepts.
+then mission accomplished. The ANTLR book (The Definitive ANTLR 4 Reference) does an excellent job
+of explaining the what, why, and how right from the very basics. And to be honest I spent probably
+more time figuring out the details of Java and IntelliJ IDEA (both new to me) than I did figuring
+out ANTLR concepts.
 
 The pdf in the 'docs' directory is a little poster that I prepared for colleagues a while back to
 try and explain why I thought this parsing stuff is worth taking a fresh look at.

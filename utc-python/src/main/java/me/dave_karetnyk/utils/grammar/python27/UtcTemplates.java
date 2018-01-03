@@ -10,9 +10,7 @@ class UtcTemplates {
     static final String NL = "\r\n"; // Windows only newline
 
     static String modulePreAmble =
-        "# Copyright (c) 2017 by FEI Company"                                           +NL+
-        "# All rights reserved. This file includes confidential and proprietary"        +NL+
-        "# information of FEI Company."                                                 +NL+
+        "# Under MIT License, Copyright (c) 2017-18 Dave Karetnyk."                     +NL+
         "import unittest"                                                               +NL+
         ""                                                                              +NL;
 

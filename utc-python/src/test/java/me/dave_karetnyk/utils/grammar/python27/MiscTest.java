@@ -3,6 +3,7 @@
 //      https://github.com/DaveKaretnyk/parsing-utils2
 package me.dave_karetnyk.utils.grammar.python27;
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,14 +11,11 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MiscTest {
-    private boolean printDiagnostics = true;
-
     @BeforeEach
     void setUp() {
     }
@@ -28,6 +26,8 @@ class MiscTest {
 
     @Test
     void moduleNameTest() {
+        boolean printDiagnostics = true;
+
         String testy = "input/sample1.py";
         if (printDiagnostics)
             System.out.println(testy);
@@ -48,6 +48,7 @@ class MiscTest {
         assertEquals("sample1", moduleName);
     }
 
+    @Ignore
     @Test
     void checkIfFileOrDir() throws IOException {
         File fileOrDir = new File("C:\\Windows");
@@ -57,16 +58,4 @@ class MiscTest {
         assertTrue(fileOrDir.isFile());
     }
 
-    @Test
-    void filesInDirRecursive() throws IOException {
-        String dirRoot = "C:\\github\\Parsers\\Antlr\\gen_python_utc";
-        List<String> fileNameList = FileListing.buildList(dirRoot);
-
-        if (printDiagnostics) {
-            for (String fileName : fileNameList) {
-                System.out.println(fileName);
-            }
-        }
-    }
 }
-

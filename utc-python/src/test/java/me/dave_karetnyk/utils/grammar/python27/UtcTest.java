@@ -27,7 +27,7 @@ class UtcTest {
 
     @Test
     void generate_symbols_sample1_py() throws Exception {
-        Utc utc = new Utc("input/sample1.py");
+        Utc utc = new Utc("samples/sample1.py");
         SymbolTable symbolTable = utc.generateSymbols();
 
         if (printDiagnostics) {
@@ -76,7 +76,7 @@ class UtcTest {
 
     @Test
     void render_utc_sample1() throws Exception {
-        Utc utc = new Utc("input/sample1.py");
+        Utc utc = new Utc("samples/sample1.py");
         SymbolTable symbolTable = utc.generateSymbols();
 
         String result = utc.render(symbolTable);

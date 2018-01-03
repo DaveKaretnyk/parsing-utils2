@@ -1,3 +1,0 @@
-
-class AperturesControl(object):
-    pass

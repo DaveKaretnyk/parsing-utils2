@@ -42,7 +42,7 @@ detected errors.
 
 This is a more sensible project organization using a Maven pom.xml file than its manually set up
 counterpart 'check-python27-manual', But functionally it is no different. More information in the
- readme.txt in the directory.
+readme.txt in the directory.
 
 #### check-python-33-manual
 Program that scans Python modules (files) or packages (directories) for 3.3 syntax and flags any

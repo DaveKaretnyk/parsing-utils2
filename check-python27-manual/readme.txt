@@ -1,14 +1,25 @@
 Grammar checker for Python modules
-----------------------------------
+**********************************
 Check the grammar of the specified Python modules (files).
 
-Main features:
-    + Client can specify either a single module (.py file) or list of modules
-     (directory).
-	+ JUnit tests for a few miscellaneous files and for a snapshot of the
+Purpose
+-------
+* Main features:
+    * Client can specify either a single module (.py file) or list of modules
+      (directory).
+	* JUnit tests for a few miscellaneous files and for a snapshot of the
 	  2.7.13 standard library sources.
-	+ Handle UTF-8 BOM marker in files - that tripped me up for a while.
+	* Handle UTF-8 BOM marker in files - that tripped me up for a while.
+* Shows how to setup and consume lexical and grammatical errors from the
+  ANTLR framework.
 
+Status
+------
+Working OK but grammar needs some attention - few spots to be looked into (see
+TODOs listed in 'check-python27' project).
+
+Grammar
+-------
 The grammar was developed by taking the Python 3.3 grammar from Bart Kiers:
 	https://github.com/bkiers/python3-parser
 Then diffing the official 2.7 grammar specification against the 3.3

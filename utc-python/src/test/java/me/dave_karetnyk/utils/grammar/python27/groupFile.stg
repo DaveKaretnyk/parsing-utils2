@@ -1,0 +1,5 @@
+// StringTemplate group file
+
+decl(type, name, value) ::= "<type> <name><init(value)>;"
+
+init(v) ::= "<if(v)> = <v><endif>"

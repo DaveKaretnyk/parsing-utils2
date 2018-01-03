@@ -1,22 +1,40 @@
-Generate UTC for a Python module
---------------------------------
-Generate Unit Test Code for the specified Python module (file).
+Generate UTC stubs for a Python module
+**************************************
+Generate Unit Test Code stubs for the specified Python module (file).
 
-Main features:
-    + ignores private free methods or private class methods (i.e. if name begins with '_').
-    + All generated UTC is written to one fie.
-    + UTC is output in the same order that it appears in the file being analyzed.
+Purpose
+-------
+* Main features:
+    * Single argument to program - the name of the module (file) to be
+      processed.
+    * The output is written to standard output, but also to the clipboard to
+      be then pasted wherever required.
+    * The output consists of test method 'stubs', i.e. with no actual content
+      but filled in with comments (TODOs) and assertions to then guide the
+      filling in of the real test code.
+    * Ignores private free methods or private class methods (i.e. if name
+      begins with '_').
+    * Ignores embedded/local classes and methods.
+    * All generated UTC is written to one fie.
+    * UTC is output in the same order that it appears in the file being
+      analyzed.
+
+Status
+------
+Working OK. But only very limited testing to date.
+
+Grammar
+-------
+Python 2.7.13 grammar. Status and details - see 'check-python27' project in
+this repository.
 
 
 TODOs
 -----
-* Understand details of Python3.X grammar.
-* Implement Python 2.7.X grammar.
-
 * split UI code in separate folder? package?
 * rename project: Java style.
-* how to deploy?
-
+* StringTemplate (ST) version - using the one that is bundled with ANTLR. Is
+  more up to date version useful?
 * ST: imports: format multiline if > 100 chars.
 * ST: imports: no separator for last import.
 * ST: would like to generate class functions purely from ST.
@@ -46,3 +64,4 @@ Done
     * Non Python files, e.g. garbage or Java code, ...
     * File with grammar error.
 * process directory of files. Not for now, just handle single file.
+* how to deploy? Via JAR.

@@ -63,4 +63,7 @@ official Python 2.7 grammar specification against the 3.3 specification to figur
 were needed. Setup as a 'manual' IntelliJ project, so no use of Maven or Gradle.  More information
 in the readme.txt in the directory. See functionally equivalent project 'check-python27' for a
 better project organization.
- 
+
+#### utc-python
+Program the generates test method stubs for the Python module (file) provided as argument. Uses the
+same grammar as project 'check-python27'. More information in the readme.txt in the directory.

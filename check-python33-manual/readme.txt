@@ -23,7 +23,8 @@ With respect to grammar, this is the same Python 3.3 grammar that you will
 find from Bart Kiers @
 	https://github.com/bkiers/python3-parser
 In that respect then nothing new, just my own experimenting to get started
-with ANTLR (and Java).
+with ANTLR (and Java). Note that the grammar contains embedded actions
+(written in Java) so can only be used with Java as the target language.
 
 Setup
 -----

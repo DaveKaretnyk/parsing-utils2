@@ -23,7 +23,9 @@ Grammar
 The grammar was developed by taking the Python 3.3 grammar from Bart Kiers:
 	https://github.com/bkiers/python3-parser
 Then diffing the official 2.7 grammar specification against the 3.3
-specification to figure out what changes were needed.
+specification to figure out what changes were needed. The grammar contains
+embedded actions (written in Java) so can only be used with Java as the target
+language.
 
 Setup
 -----

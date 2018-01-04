@@ -11,13 +11,17 @@ Purpose
       be then pasted wherever required.
     * The output consists of test method 'stubs', i.e. with no actual content
       but filled in with comments (TODOs) and assertions to then guide the
-      filling in of the real test code.
+      adding the real test code.
     * Ignores private free methods or private class methods (i.e. if name
       begins with '_').
     * Ignores embedded/local classes and methods.
     * All generated UTC is written to one fie.
     * UTC is output in the same order that it appears in the file being
       analyzed.
+* Shows how to setup and consume methods called by the ANTLR generated
+  parse tree listener code, e.g. as a method is entered or exited.
+* Basic use of StringTemplate (ST) library to output the required test code.
+    http://www.stringtemplate.org/
 
 Status
 ------
@@ -26,15 +30,18 @@ Working OK. But only very limited testing to date.
 Grammar
 -------
 Python 2.7.13 grammar. Status and details - see 'check-python27' project in
-this repository.
+this repository. The grammar contains embedded actions (written in Java) so
+can only be used with Java as the target language.
 
 
 TODOs
 -----
+* Does not pick up lexical or grammatical errors in the source file - just
+  tries to continue.
 * split UI code in separate folder? package?
-* rename project: Java style.
 * StringTemplate (ST) version - using the one that is bundled with ANTLR. Is
   more up to date version useful?
+* StringTemplate (ST) use in general needs clean up.
 * ST: imports: format multiline if > 100 chars.
 * ST: imports: no separator for last import.
 * ST: would like to generate class functions purely from ST.

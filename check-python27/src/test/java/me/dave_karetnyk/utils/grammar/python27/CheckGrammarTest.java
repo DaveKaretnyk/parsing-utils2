@@ -20,7 +20,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -34,7 +34,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -48,7 +48,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -62,7 +62,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -76,7 +76,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -90,7 +90,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -104,7 +104,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -118,7 +118,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -131,7 +131,7 @@ class CheckGrammarTest {
         String directory = "samples/miscellaneous";
         List<String> fileList = FileListing.buildList(directory);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -144,7 +144,7 @@ class CheckGrammarTest {
         String directory = "samples/bad_files";
         List<String> fileList = FileListing.buildList(directory);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
 
         if (printDiagnostics)
@@ -157,7 +157,7 @@ class CheckGrammarTest {
         String directory = "samples/utf_8_bom";
         List<String> fileList = FileListing.buildList(directory);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
         List<AntlrSyntaxError> errorList = checkGrammar.getAntlrSyntaxErrorList();
 
@@ -197,7 +197,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
         List<AntlrSyntaxError> errorList = checkGrammar.getAntlrSyntaxErrorList();
 
@@ -219,7 +219,7 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
         List<AntlrSyntaxError> errorList = checkGrammar.getAntlrSyntaxErrorList();
 
@@ -250,7 +250,7 @@ class CheckGrammarTest {
         String directory = "samples/source_with_errors";
         List<String> fileList = FileListing.buildList(directory);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
         List<AntlrSyntaxError> errorList = checkGrammar.getAntlrSyntaxErrorList();
 

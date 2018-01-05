@@ -22,6 +22,3 @@ install:
   - cmd: java -version
 build_script:
   - mvn clean package --file ./check-python27/pom.xml --batch-mode
-cache:
-  - C:\maven\
-  - C:\Users\appveyor\.m2

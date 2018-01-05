@@ -2,6 +2,7 @@
 import os
 import time
 
+
 def close_dialog(self):
     self.mc = None
     self.oms = None

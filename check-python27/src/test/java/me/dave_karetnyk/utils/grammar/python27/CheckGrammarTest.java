@@ -186,18 +186,17 @@ class CheckGrammarTest {
         // issue with deprecated warn stmt?
         if (printDiagnostics)
             System.out.format("\t%d errors\t\tdirectory:\t%s\n", errors, directory);
-        assertEquals(48, errors);
+        assertEquals(34, errors);
     }
 
     // -------------------------------------------------------------------------------------------
     // Some simple tests of files with syntax errors.
     @Test
-    void configuation_control_Test() throws Exception {
+    void configuration_control_Test() throws Exception {
         String module = "samples/source_with_errors/no_nl_at_eof.py";
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        // CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
         CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
         List<AntlrSyntaxError> errorList = checkGrammar.getAntlrSyntaxErrorList();
@@ -220,7 +219,6 @@ class CheckGrammarTest {
         List<String> fileList = new ArrayList<>();
         fileList.add(module);
 
-        // CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
         CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
         List<AntlrSyntaxError> errorList = checkGrammar.getAntlrSyntaxErrorList();
@@ -252,8 +250,7 @@ class CheckGrammarTest {
         String directory = "samples/source_with_errors";
         List<String> fileList = FileListing.buildList(directory);
 
-        CheckGrammar checkGrammar = new CheckGrammar(fileList, true);
-        //  CheckGrammar checkGrammar = new CheckGrammar(fileList);
+        CheckGrammar checkGrammar = new CheckGrammar(fileList);
         int errors = checkGrammar.execute();
         List<AntlrSyntaxError> errorList = checkGrammar.getAntlrSyntaxErrorList();
 

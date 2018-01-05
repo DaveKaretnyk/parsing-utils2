@@ -186,7 +186,7 @@ class CheckGrammarTest {
         // issue with deprecated warn stmt?
         if (printDiagnostics)
             System.out.format("\t%d errors\t\tdirectory:\t%s\n", errors, directory);
-        assertEquals(48, errors);
+        assertEquals(34, errors);
     }
 
     // -------------------------------------------------------------------------------------------

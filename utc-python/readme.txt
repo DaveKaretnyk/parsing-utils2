@@ -1,6 +1,7 @@
 Generate UTC stubs for a Python module
 **************************************
-Generate Unit Test Code stubs for the specified Python module (file).
+Java program that generates Unit Test Code stubs for the specified Python
+module (file).
 
 Purpose
 -------

@@ -1,6 +1,6 @@
 Grammar checker for Python modules
 **********************************
-Check the grammar of the specified Python modules (files).
+Java program that checks the grammar of the specified Python modules (files).
 
 Purpose
 -------

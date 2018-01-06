@@ -37,16 +37,16 @@ A short description here of the purpose of each directory (typically a directory
 project of some description).
 
 #### check-python-27
-Program that scans Python modules (files) or packages (directories) for 2.7 syntax and flags any
-detected errors.
+Java program that scans Python modules (files) or packages (directories) for 2.7 syntax and flags
+any detected errors.
 
 This is a more sensible project organization using a Maven pom.xml file than its manually set up
 counterpart 'check-python27-manual', But functionally it is no different. More information in the
 readme.txt in the directory.
 
 #### check-python-33-manual
-Program that scans Python modules (files) or packages (directories) for 3.3 syntax and flags any
-detected errors. This uses the Python 3.3 grammar from Bart Kiers:
+Java program that scans Python modules (files) or packages (directories) for 3.3 syntax and flags
+any detected errors. This uses the Python 3.3 grammar from Bart Kiers:
 
 https://github.com/bkiers/python3-parser
 
@@ -55,8 +55,8 @@ and IntelliJ IDEA... Setup as a 'manual' IntelliJ project, so no use of Maven or
 information in the readme.txt in the directory.
 
 #### check-python-27-manual
-Program that scans Python modules (files) or packages (directories) for 2.7 syntax and flags any
-detected errors.
+Java program that scans Python modules (files) or packages (directories) for 2.7 syntax and flags
+any detected errors.
 
 The grammar was developed by taking the 3.3 grammar from Kiers as starting point. Then diffing the
 official Python 2.7 grammar specification against the 3.3 specification to figure out what changes
@@ -65,5 +65,6 @@ in the readme.txt in the directory. See functionally equivalent project 'check-p
 better project organization.
 
 #### utc-python
-Program the generates test method stubs for the Python module (file) provided as argument. Uses the
-same grammar as project 'check-python27'. More information in the readme.txt in the directory.
+Java program the generates test method stubs for the Python module (file) provided as argument.
+Uses the same grammar as project 'check-python27'. More information in the readme.txt in the
+directory.

@@ -59,6 +59,9 @@ TODOs (maybe)
 -------------
 * Some errors when processing the standard library sources. From an initial
   look they are mostly related to the print stmt? And also the warn stmt?
+	* But also difference between running locally on Windows system and via CI
+	  (Travis and AppVeyor)? Needs looked into. See log files at:
+	  .../samples/standard_library_27_13.
 * Should really have the Python 2.7 and Python 3.3 grammars set up as modules
   of some kind that are used by the 'main checker code'!
 * Some Maven details not entirely clear to me yet.

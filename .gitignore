@@ -328,4 +328,7 @@ hs_err_pid*
 !check-python27/samples/bad_files/blah.pyc
 !check-python27/samples/bad_files/blah.pyx
 !check-python27/samples/bad_files/extension.pyd
-!samples/standard_library_27_13/current_errors.log
+
+!samples/standard_library_27_13/local_Windows_errors.log
+!samples/standard_library_27_13/AppVeyor_errors.log
+!samples/standard_library_27_13/Travis_errors.log
